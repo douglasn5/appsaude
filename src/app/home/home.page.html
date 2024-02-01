@@ -1,20 +1,64 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Aula Ionic-douglas
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content class="card-background-page">
+  <ion-card>
+    <img src="assets/saude.jpg" width="100%"/>
+    <div class="card-title">Senac Saúde</div>
+    <div class="card-subtitle">Cuidando de você</div>
+  </ion-card>
+
+
+
+
+<ion-grid>
+ <ion-row>
+   <ion-col>
+
+
+      <ion-item (click)="exibirSobre()" class="ion-activated"> 
+        <div class="ion-text-center">
+          <img src="assets/em-formacao.png">
+          <h3>Sobre</h3>
+        </div>
+      </ion-item>
+    </ion-col>
+   <ion-col>
+      <ion-item (click)="exibirVacinacao()"  class="ion-activated"> 
+        <div class="ion-text-center">
+          <img src="assets/calendario.png">
+          <h3>Calendário</h3>
+        </div>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row>
+    <ion-col>
+        <ion-item  (click)="exibirOutras()" class="ion-activated"> <!-- (click)="exibirOutras()" -->
+          <div class="ion-text-center">
+            <img src="assets/vacina.png">
+            <h3>Outras</h3>
+          </div>
+        </ion-item>
+   </ion-col>
+   <ion-col>
+      <ion-item (click)="exibirContato()" class="ion-activated">
+        <div class="ion-text-center">
+          <img src="assets/contato.png">
+          <h3>Contato</h3>
+        </div>
+      </ion-item>
+   </ion-col>
+  </ion-row>
+</ion-grid>
 </ion-content>
+
+
